@@ -1,14 +1,14 @@
 import { useState } from "react";
 
-export default function Composer() {
-  const [draft, setDraft] = useState("");
+export default function Composer({ onSend }) {
+const [draft, setDraft] = useState("");
 
   function send() {
     const text = draft.trim();
     if (text === "") {
       return;
     }
-    console.log("send:", text);
+    onSend(text);
     setDraft("");
   }
 

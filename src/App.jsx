@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import { CHANNELS, SEED_MESSAGES } from "./data.js";
 import Sidebar from "./components/Sidebar.jsx";
 import ChatHeader from "./components/ChatHeader.jsx";
